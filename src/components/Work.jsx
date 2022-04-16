@@ -10,7 +10,7 @@ const Work = () => {
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
 						Work
 					</p>
-					<p className='py-6'>// Check out some of my recent work</p>
+					<p className='py-6'>Check out some of my recent work</p>
 				</div>
 				{/* Work-List container */}
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 '>
@@ -40,7 +40,7 @@ const Work = () => {
 					</div>
 
 					<div
-						style={{backgroundImage: `url(${WorkImg})`}}
+						style={{backgroundImage: `url(${realEstate})`}}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
