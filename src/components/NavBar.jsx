@@ -12,7 +12,7 @@ const NavBar = () => {
 	const showMenu =
 		'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
 	const menu = menuItems.map((menu) => (
-		<li className='py-6 text-4xl md:py-0 md:text-xl lg:py-0 lg:text-xl'>
+		<li className='py-6 text-4xl  md:text-base md:py-0 '>
 			{menu}
 		</li>
 	))
