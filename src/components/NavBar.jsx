@@ -6,14 +6,22 @@ import Logo from '../assets/logo.png'
 import {Link} from 'react-scroll'
 const NavBar = () => {
 	const [toggle, setToggle] = useState(false)
-
-	const menuItems = ['Home', 'About', 'Skills', 'Work', 'Contact']
+	const menuItems = [
+		{name: 'Home', to: 'home'},
+		{name: 'About', to: 'about'},
+		{name: 'Skills', to: 'skills'},
+		{name: 'Work', to: 'work'},
+		{name: 'Contact', to: 'contact'},
+	]
+	// const menuItems = ['Home', 'About', 'Skills', 'Work', 'Contact']
 
 	const showMenu =
 		'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
 	const menu = menuItems.map((menu) => (
 		<li className='py-6 text-4xl  md:text-base md:py-0 '>
-			{menu}
+			<Link to={menu.to} smooth={true} duration={500}>
+				{menu.name}
+			</Link>
 		</li>
 	))
 

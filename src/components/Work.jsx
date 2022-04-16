@@ -5,7 +5,7 @@ const Work = () => {
 	return (
 		<div name='work' className='w-full md:h-screen  bg-[#0a192f]'>
 			{/* Container */}
-			<div className='max-w-[1000px] px-4 flex flex-col text-[#d1d5db] lg:mx-auto '>
+			<div className='max-w-[1000px] px-4 flex flex-col text-[#d1d5db] lg:mx-auto  w-full h-full justify-center '>
 				<div className='pb-8'>
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
 						Work
@@ -37,8 +37,8 @@ const Work = () => {
 								</a>
 							</div>
 						</div>
-          </div>
-          
+					</div>
+
 					<div
 						style={{backgroundImage: `url(${WorkImg})`}}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
