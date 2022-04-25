@@ -56,7 +56,7 @@ const Skills = () => {
 	return (
 		<div name='skills' className='w-full h-screen bg-[#0a192f]'>
 			{/* Container */}
-			<div className='max-w-[1000px] px-4 flex flex-col text-[#d1d5db] lg:mx-auto  w-full h-full justify-center '>
+			<div className='max-w-[1000px] w-full h-full   p-4 flex flex-col justify-center text-[#d1d5db] mx-auto  '>
 				<div>
 					<p className='text-4xl font-bold inline border-b-4 border-pink-600'>
 						Skills
@@ -64,11 +64,11 @@ const Skills = () => {
 					<p className='py-4'> These are the technologies I've worked with</p>
 				</div>
 
-				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 '>
+				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-3 '>
 					{skillSet.map((skill) => (
 						<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 							<img className='w-20 mx-auto' src={skill.img} alt='HTML icon' />
-							<p className='my-4'>{skill.name}</p>
+							<p>{skill.name}</p>
 						</div>
 					))}
 				</div>
